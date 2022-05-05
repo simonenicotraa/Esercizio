@@ -1,0 +1,58 @@
+body{
+    width: 100%;
+    
+    background-color: grey;
+    margin: auto;
+    font-family: 'Gloria Hallelujah', cursive;
+}
+h1{
+    font-size: 2em;
+    font-style:italic ;
+    font-weight: bold;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap
+    
+}
+.container div{
+    width: 200px;
+    height: 100px;
+    padding:2rem 0.5rem;
+    text-align: center;
+    border: 1px;
+    line-height: 3em;
+    border-style:solid ;
+    color: black;
+    margin: 1rem;
+    box-shadow: 10px 10px rgba(52, 51, 51, 0.529);
+}
+.task1, .task5, .task7{
+    background: rgb(248,250,130);
+    background: linear-gradient(180deg, rgba(248,250,130,0.8076272745426296) 84%, rgba(248,250,130,0.6535656498927696) 90%, rgba(103,104,54,1) 100%, rgba(0,0,0,1) 100%);
+        transform: rotate(-5deg);
+        transition-property: rotate;
+        transition: 0.5s;
+        
+}
+.task2, .task4, .task8{
+    background: rgb(158,226,122);
+    background: linear-gradient(180deg, rgba(158,226,122,0.8076272745426296) 84%, rgba(193,250,130,0.6535656498927696) 90%, rgba(103,104,54,1) 100%, rgba(0,0,0,1) 100%);
+    transform: rotate(5deg);
+    
+
+}
+.task3, .task6{
+    background: rgb(153,122,226);
+    background: linear-gradient(180deg, rgba(153,122,226,0.8076272745426296) 74%, rgba(194,130,250,0.6535656498927696) 76%, rgba(103,104,54,1) 98%, rgba(0,0,0,0.7572071064754027) 100%);
+        transform: rotate(-8deg);
+        
+}
+.container div:hover{
+    transform: rotate(0deg);
+    transform: scale(1.2);
+    /* transition-property: rotate; */
+    transition: 1s;
+}
+
+
