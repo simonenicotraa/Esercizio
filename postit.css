@@ -1,9 +1,9 @@
 body{
-    width: 100%;
+    width: 80%;
     
-    background-color: grey;
-    margin: auto;
-    font-family: 'Gloria Hallelujah', cursive;
+   
+    margin: 0 auto;
+    font-family: "Indie Flower"
 }
 h1{
     font-size: 2em;
@@ -12,13 +12,12 @@ h1{
 }
 .container{
     display: flex;
-    flex-wrap: wrap
-    
+    flex-wrap: wrap;
+    background-color: rgb(149, 147, 147);
 }
 .container div{
-    width: 200px;
-    height: 100px;
-    padding:2rem 0.5rem;
+    
+    padding:3em;
     text-align: center;
     border: 1px;
     line-height: 3em;
@@ -35,7 +34,7 @@ h1{
         transition: 0.5s;
         
 }
-.task2, .task4, .task8{
+.task2, .task4, .task8{ /* contenitore div:nth-child(2n) per selezionare tutti i contenitori pari */
     background: rgb(158,226,122);
     background: linear-gradient(180deg, rgba(158,226,122,0.8076272745426296) 84%, rgba(193,250,130,0.6535656498927696) 90%, rgba(103,104,54,1) 100%, rgba(0,0,0,1) 100%);
     transform: rotate(5deg);
@@ -51,6 +50,7 @@ h1{
 .container div:hover{
     transform: rotate(0deg);
     transform: scale(1.2);
+    z-index: 1;
     /* transition-property: rotate; */
     transition: 1s;
 }
